@@ -1,0 +1,293 @@
+@import url("https://fonts.googleapis.com/css?family=Nunito&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Nunito", sans-serif;
+}
+
+.alert-course {
+  position: relative;
+  padding: 1rem 1rem;
+  margin-bottom: 1rem;
+  border: 1px solid transparent;
+  border-radius: .25rem;
+}
+
+.btn-course {
+  border-radius: 0;
+  font-size: 14px;
+  border: 1px solid #fff;
+  font-weight: bold;
+  color: #ffffff !important;
+  padding: 8px 40px;
+  text-transform: capitalize;
+  text-decoration: none;
+}
+
+body {
+  background: #eedfcc;
+  color: #555555;
+  font-size: 14px;
+}
+
+.section-title {
+  margin-bottom: 45px;
+  text-align: center;
+}
+
+.section-title h2 {
+  font-size: 48px;
+  font-weight: 600;
+  line-height: 1.5;
+}
+
+.section-title p {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0;
+  font-size: 16px;
+  font-family: 'Droid Serif', sans-serif;
+  font-style: italic;
+}
+
+img {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.wrapper {
+  width: 100%;
+  margin: 20px auto;
+}
+
+.cards_wrap {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.cards_wrap .card_item {
+  width: 25%;
+  padding: 10px;
+  margin-left: 95px;
+}
+
+
+.cards_wrap .card_inner {
+  background: #fff;
+}
+
+.cards_wrap .card_top {
+  width: 100%;
+  min-height: 225px;
+  padding: 10px;
+  padding-bottom: 0;
+}
+
+.cards_wrap .card_bottom {
+  padding: 15px;
+  height: 113px;
+}
+
+.cards_wrap .g-card {
+  padding: 15px;
+  height: 200px;
+  font-weight: bolder;
+}
+
+.cards_wrap .g-card2 {
+  padding: 15px;
+  height: 200px;
+  font-weight: bolder;
+}
+
+.cards_wrap .g-card h6 {
+  font-weight: bold;
+}
+
+.cards_wrap .g-card2 h6 {
+  font-weight: bold;
+}
+
+.cards_wrap .card_bottom .card_category {
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.cards_wrap .card_bottom .card_info {
+  padding: 15px;
+  margin: 10px 0;
+  border: 1px dashed #0071bc;
+}
+
+.cards_wrap .card_bottom .card_info .title {
+  color: #0071bc;
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+
+.cards_wrap .card_bottom .card_creator {
+  text-align: center;
+}
+
+.w-100 {
+  height: 400px !important;
+}
+
+.join {
+  background-color: #000000;
+  /* Green */
+  border: none;
+  color: white;
+  padding: 13px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 13px;
+  cursor: pointer;
+}
+
+.button1 {
+  width: 100px;
+  border-radius: 50px 50px 50px 50px;
+}
+
+.carousel-indicators [data-bs-target] {
+  width: 12px;
+  height: 12px;
+  border-radius: 0%;
+  background-color: yellow !important;  
+}
+
+/* course form css starts */
+
+.b1 {
+  margin-top: 80px;
+  font-size: 36px;
+  line-height: 1.5;
+  font-weight: 600;
+}
+
+.form-img {
+  width: 600px;
+  height: 750px;
+  max-width: 100%;
+}
+
+.form {
+  margin-top: 290px !important;
+  background-color: #fafaf8;
+  margin-left: 20px;
+  margin-bottom: 50px;
+  height: 800px;
+}
+
+.form h3 {
+  font-size: 30px;
+  font-weight: 600;
+}
+
+/* course form css ends */
+
+
+/* media queries  */
+
+
+@media (max-width: 1444px) {
+  .b-tech {
+    line-height: 1.0;
+  }
+
+}
+
+@media (max-width: 1190px) {
+  .m-tech {
+    line-height: 1.0;
+  }
+
+}
+
+@media (max-width: 1121px) {
+  .mba {
+    line-height: 1.0;
+  }
+
+}
+
+@media (max-width: 1140px) {
+  .cards_wrap .card_item {
+    margin-left: 70px;
+  }
+
+}
+
+
+@media (max-width: 1024px) {
+  .cards_wrap .card_item {
+    width: 33.3%;
+  }
+
+  .cards_wrap .g-card {
+    height: 200px;
+  }
+
+  .cards_wrap .g-card2 {
+    height: 200px;
+  }
+}
+
+
+@media (max-width: 768px) {
+  .cards_wrap .card_item {
+    width: 70%;
+    margin-left: 115px;
+  }
+
+  .cards_wrap .g-card {
+    height: 190px;
+  }
+
+  .cards_wrap .g-card2 {
+    height: 170px;
+  }
+
+
+}
+
+@media (max-width: 704px) {
+
+  .cards_wrap .g-card2 {
+    height: 190px;
+  }
+}
+
+@media (max-width: 700px) {
+  .cards_wrap .card_item {
+    width: 70%;
+    margin-left: 101px;
+  }
+}
+
+@media (max-width: 528px) {
+  .cards_wrap .card_top {
+    height: auto;
+  }
+
+  .cards_wrap .card_item {
+    width: 100%;
+    margin-left: 0px;
+  }
+
+  .cards_wrap .g-card2 {
+    height: 170px;
+  }
+}
+
+@media (max-width: 497px) {
+
+  .cards_wrap .g-card2 {
+    height: 190px;
+  }
+}

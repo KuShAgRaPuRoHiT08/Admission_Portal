@@ -1,0 +1,54 @@
+<%- include('../header.ejs') %>
+    <br><br><br><br>
+    <center>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h3 style="width: 40%;" class="alert-course alert-success text-center">DISPLAY DATA</h3>
+    
+                    <table style="width: 40%;" class="table table-striped  table-responsive table-info">
+                        <thead>
+                            <tr>
+                                <th scope="col">No</th>
+                                <th scope="col">Username</th>
+                                <th scope="col">Course</th>
+                                <th scope="col">Action</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+    
+    
+                            <% var i=1 %>
+    
+                                <% data.forEach((item)=>{ %>
+                                    <tr>
+                                        <td>
+                                            <%= i++ %>
+                                        </td>
+                                        <td>
+                                            <%= item.username %>
+                                        </td>
+                                        <td>
+                                            <%= item.course %>
+                                        </td>
+                                        <td>
+                                            <a class="btn-course btn-info" href="/ViewData/<%= item._id %>">View
+                                            </a>&nbsp;
+                                            <a class="btn-course btn-danger" href="/DeleteData/<%= item._id %>">Delete
+                                            </a>
+                                        </td>
+                                    </tr>
+                                    <% })%>
+                        </tbody>
+                    </table>
+    
+                    <center>
+                        <a href="/dashboard" class="btn-course btn-warning">Back To Admin Dashboard</a>
+                    </center>
+                    <br>
+                </div>
+            </div>
+        </div>
+    </center>
+
+    <%- include('../footer.ejs') %>

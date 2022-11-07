@@ -1,0 +1,107 @@
+<%- include('../header.ejs') %>
+
+
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-1"></div>
+            <div class="col-md-5">
+                <h2 class="text-black b1">
+                    <br>
+                    B.Tech Registration Form
+                </h2>
+                <p class="text-black">
+                    Once you"re registered, you can:
+                    <br><br>
+                    In Case any query, Kindly Contact: 7974978812
+                </p>
+                <hr class="text-black">
+                <br>
+                <center>
+                    <img src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-registration/img4.webp"
+                        class="form-img">
+                </center>
+            </div>
+            <div class="col-md-5 form">
+                <h3 class="text-center text-info" style="padding-top: 20px;">Edit Form</h3>
+                <form action="/UpdateCourse/<%=data._id%>" method="post">
+                    <div class="mb-3">
+                        <label>UserName:</label>
+                        <input type="text" name="username" class="form-control" value="<%=data.username%>">
+                    </div>
+
+                    <div class="mb-3">
+                        <label>Email:</label>
+                        <input type="text" name="email" class="form-control" value="<%=data.email%>">
+
+                    </div>
+
+                    <div class="mb-3">
+                        <label>Mobile Number:</label>
+                        <input type="text" name="mobile" class="form-control" placeholder="Enter Mobile Number"
+                            value="<%=data.mobile %>">
+                    </div>
+
+                    <div class="mb-3">
+                        <label>Address:</label>
+                        <br>
+                        <textarea class="form-control" name="address"><%=data.address%></textarea>
+                    </div>
+
+                    <div class="mb-3">
+                        <label>Gender:</label><br>
+                        <input type="radio" name="gender" value="male" <%=data.gender=='male' ? 'checked' : ''
+                            %>>&nbsp;Male<br>
+                        <input type="radio" name="gender" value="female" <%=data.gender=='female' ? 'checked' : ''
+                            %>>&nbsp;FeMale
+                    </div>
+
+                    <div class="mb-3">
+                        <label>College</label>
+                        <br>
+                        <select name="college" class="form-control" value="<%=data.college %>">
+                            <option value="">Select college</option>
+                            <option value="RGIT" <%=data.college=='RGIT' ? 'selected' : '' %>>RGIT</option>
+                            <option value="SHRIRAM COLLEGE OF ENGINEERING AND MANAGEMENT"
+                                <%=data.college=='SHRIRAM COLLEGE OF ENGINEERING AND MANAGEMENT' ? 'selected' : '' %>
+                                >SHRIRAM COLLEGE OF ENGINEERING AND MANAGEMENT</option>
+                            <option value="MPCT" <%=data.college=='MPCT' ? 'selected' : '' %>>MPCT</option>
+                            <option value="MITS" <%=data.colleger=='MITS' ? 'selected' : '' %>>MITS</option>
+                            <option value="ITM" <%=data.college=='ITM' ? 'selected' : '' %>>ITM</option>
+                        </select>
+                    </div>
+
+                    <div class="mb-3">
+                        <label>Course</label>
+                        <br>
+                        <select name="course" class="form-control" value="<%= data.course %>">
+                            <option>Select</option>
+                            <option value="B.Tech" <%=data.course=='B.Tech' ? 'selected' : '' %>>B.Tech</option>
+                            <option value="M.Tech" <%=data.course=='M.Tech' ? 'selected' : '' %>>M.Tech</option>
+                            <option value="MBA" <%=data.course=='MBA' ? 'selected' : '' %>>MBA</option>
+                        </select>
+                    </div>
+
+                    <div class="mb-3">
+                        <label>Branch</label>
+                        <br>
+                        <select name="branch" class="form-control" value="<%= data.branch %>">
+                            <option value="">Select</option>
+                            <option value="C.S.E" <%=data.branch=='C.S.E' ? 'selected' : '' %>>C.S.E</option>
+                            <option value="I.T" <%=data.branch=='I.T' ? 'selected' : '' %>>I.T</option>
+                            <option value="E.E" <%=data.branch=='E.E' ? 'selected' : '' %>>E.E</option>
+                            <option value="E.C" <%=data.branch=='E.C' ? 'selected' : '' %>>E.C</option>
+                            <option value="MECH." <%=data.branch=='MECH.' ? 'selected' : '' %>>MECH.</option>
+                            <option value="CIVIL" <%=data.branch=='CIVIL' ? 'selected' : '' %>>CIVIL</option>
+                            <option value="AUTOMOBILE" <%=data.branch=='AUTOMOBILE' ? 'selected' : '' %>>AUTOMOBILE
+                            </option>
+                        </select>
+                    </div>
+
+                    <button type="submit" class="btn btn-info">Update</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <%- include('../footer.ejs') %>

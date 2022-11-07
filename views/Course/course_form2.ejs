@@ -1,0 +1,99 @@
+<%- include('../header.ejs') %>
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-1"></div>
+            <div class="col-md-5">
+                <h2 class="text-black b1">
+                    <br>
+                    M.Tech Registration Form
+                </h2>
+                <p class="text-black">
+                    Once you"re registered, you can:
+                    <br><br>
+                    In Case any query, Kindly Contact: 7974978812
+                </p>
+                <hr class="text-black">
+                <br>
+                <center>
+                    <img src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-registration/img4.webp"
+                        class="form-img">
+                </center>
+            </div>
+            <div class="col-md-5 form">
+                <h3 class="text-center text-info" style="padding-top: 20px;">M.Tech Registration Form</h3>
+                <form action="/courseinsert" method="post">
+                    <div class="mb-3">
+                        <label>UserName:</label>
+                        <input type="text" name="username" class="form-control" value=" <%= n %>">
+                    </div>
+
+                    <div class="mb-3">
+                        <label>Email:</label>
+                        <input type="text" name="email" class="form-control" value=" <%= e %>">
+
+                    </div>
+
+                    <div class="mb-3">
+                        <label>Mobile Number:</label>
+                        <input type="text" name="mobile" class="form-control" placeholder="Enter Mobile Number">
+                    </div>
+
+                    <div class="mb-3">
+                        <label>Address:</label>
+                        <br>
+                        <textarea class="form-control" name="address"></textarea>
+                    </div>
+
+                    <div class="mb-3">
+                        <label>Gender:</label><br>
+                        <input type="radio" name="gender" value="male">&nbsp;Male<br>
+                        <input type="radio" name="gender" value="female">&nbsp;FeMale
+                        </div>
+
+                    <div class="mb-3">
+                        <label>College</label>
+                        <br>
+                        <select name="college" class="form-control">
+                            <option>Select college</option>
+                            <option>RGIT</option>
+                            <option>SHRIRAM COLLEGE OF ENGINEERING AND MANAGEMENT</option>
+                            <option>MPCT</option>
+                            <option>MITS</option>
+                            <option>ITM</option>
+                            <option>OTHERS</option>
+                        </select>
+                    </div>
+
+                    <div class="mb-3">
+                        <label>Course</label>
+                        <br>
+                        <select name="course" class="form-control">
+                            <option>Select</option>
+                            <option>M.Tech</option>
+                        </select>
+                    </div>
+
+                    <div class="mb-3">
+                        <label>Branch</label>
+                        <br>
+                        <select name="branch" class="form-control">
+                            <option>Select</option>
+                            <option>C.S.E</option>
+                            <option>I.T</option>
+                            <option>E.E</option>
+                            <option>E.C</option>
+                            <option>MECH.</option>
+                            <option>CIVIL</option>
+                            <option>AUTOMOBILE</option>
+                            <option>OTHERS</option>
+                        </select>
+                    </div>
+                    
+                    <button type="submit" class="btn btn-info">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <%- include('../footer.ejs') %>

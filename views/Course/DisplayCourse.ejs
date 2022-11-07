@@ -1,0 +1,52 @@
+<%- include('../header.ejs') %>
+
+<br><br><br><br>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <h3 class="alert-course alert-success text-center">DISPLAY</h3>
+
+        <table class="table table-striped  table-responsive table-info">
+          <thead>
+            <tr>
+              <th scope="col">No</th>
+              <th scope="col">Username</th>
+              <th scope="col">Course</th>
+              <th scope="col">Action</th>
+            </tr>
+          </thead>
+          <tbody>
+
+            
+              <% var i=1 %>
+            
+            <% data.forEach((item)=>{ %>
+              <tr>
+                <td>
+                  <%= i++ %>
+                </td>
+                <td>
+                  <%= item.username %>
+                </td>
+                <td><%= item.course %>
+                </td>
+                <td>
+                  <a class="btn-course btn-info" href="/ViewCourse/<%= item._id %>">view
+                  </a>&nbsp;
+                  <a class="btn-course btn-danger" href="/EditCourse/<%= item._id %>">Edit
+                  </a>
+                </td>
+              </tr>
+              <% })%>
+          </tbody>
+        </table>
+        
+        <center>
+          <a href="/course" class="btn-course btn-warning">Back To The Dashboard</a>
+        </center>
+        <br>
+      </div>
+    </div>
+  </div>
+
+  <%- include('../footer.ejs') %>
