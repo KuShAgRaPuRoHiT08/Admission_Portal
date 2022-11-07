@@ -2,6 +2,7 @@ const express = require('express');
 const connectDB = require('./db/connectdb.js');
 const cookieParser = require('cookie-parser')
 const app = express() //method
+const port = process.env.PORT || 8000
 app.use(cookieParser())
 //for message purposes
 var session = require('express-session');
@@ -15,7 +16,7 @@ app.use(session({
 
 app.use(flash())
 //for message purposes
-const port = 3005
+
 var bodyParser = require('body-parser')//body parser used to take the data
 app.use(bodyParser.urlencoded({ extended: false }))//used to get data in url and convert to json format
 //router link
