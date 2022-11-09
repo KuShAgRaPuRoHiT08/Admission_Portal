@@ -5,7 +5,8 @@ const app = express() //method
 const port = process.env.PORT || 8000
 app.use(cookieParser())
 //for message purposes
-var session = require('express-session');
+// var session = require('express-session');
+var session = require('cookie-session');
 var flash = require('connect-flash');
 app.use(session({
     secret: 'keyboard cat',
