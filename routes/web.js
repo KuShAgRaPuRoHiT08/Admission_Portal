@@ -11,6 +11,8 @@ const AdminController = require('../controllers/admin/AdminController')
 const router = express.Router()
 
 // Block Controller
+
+
 router.get('/', BlockController.home)
 router.get('/Course',CheckUserAuth, BlockController.Course)
 router.get('/course_form',CheckUserAuth, BlockController.Course_form)

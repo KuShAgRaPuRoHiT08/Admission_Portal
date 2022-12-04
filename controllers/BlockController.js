@@ -1,14 +1,17 @@
 const UserModel = require('../models/User')
 const CourseModel = require('../models/Course')
 
+
 class BlockController {
 
-    static home = (req, res) => {
+    static home = async (req, res) => {
         res.render('User/login', { message: req.flash('error') })
+
     }
+    
 
     static Course = async (req, res) => {
-        const { username,_id } = req.user
+        const { username, _id } = req.user
         const btech = await CourseModel.findOne({ user: _id, course: 'B.Tech' })
         const mtech = await CourseModel.findOne({ user: _id, course: 'M.Tech' })
         const mba = await CourseModel.findOne({ user: _id, course: 'MBA' })
