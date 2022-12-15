@@ -4,7 +4,7 @@ class FormController {
 
 
     static courseinsert = async (req, res) => {
-      //  console.log(user) 
+        //  console.log(user) 
         try {
             const { username, email, mobile, address, gender, college, course, branch } = req.body
             const result = new CourseModel({
@@ -16,7 +16,7 @@ class FormController {
                 college: college,
                 course: course,
                 branch: branch,
-                user:req.user.id
+                user: req.user.id
 
             })
             //saving data
@@ -31,10 +31,10 @@ class FormController {
     static DisplayCourse = async (req, res) => {
 
         try {
-            const { username,_id  } = req.user
-            const result = await CourseModel.find({user:_id})
+            const { username, image, _id } = req.user
+            const result = await CourseModel.find({ user: _id })
             //  console.log(result)
-            res.render('Course/DisplayCourse', { data: result, n: username })
+            res.render('Course/DisplayCourse', { data: result, n: username, image: image })
         } catch (err) {
             console.log(err)
         }
@@ -42,10 +42,10 @@ class FormController {
     static ViewDisplay = async (req, res) => {
 
         try {
-            const { username } = req.user
+            const { username, image } = req.user
             const result = await CourseModel.findById(req.params.id)
             // console.log(result)
-            res.render('Course/ViewCourse', { data: result, n: username })
+            res.render('Course/ViewCourse', { data: result, n: username, image: image })
         } catch (err) {
             console.log(err)
         }
@@ -53,10 +53,10 @@ class FormController {
     static EditCourse = async (req, res) => {
 
         try {
-            const { username } = req.user
+            const { username, image } = req.user
             const result = await CourseModel.findById(req.params.id)
             //    console.log(result)
-            res.render('Course/EditCourse', { data: result, n: username })
+            res.render('Course/EditCourse', { data: result, n: username, image: image })
         } catch (err) {
             console.log(err)
         }
@@ -66,7 +66,7 @@ class FormController {
         // console.log(req.body)
 
         try {
-            const { username } = req.user
+            const { username, image } = req.user
             const result = await CourseModel.findByIdAndUpdate(req.params.id, req.body)
             // console.log(result)
             res.redirect('/DisplayCourse');

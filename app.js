@@ -1,8 +1,17 @@
 const express = require('express');
-const connectDB = require('./db/connectdb.js');
-const cookieParser = require('cookie-parser')
 const app = express() //method
+const connectDB = require('./db/connectdb.js');
+connectDB();
+const web = require('./routes/web.js')
 const port = process.env.PORT || 8000
+const fileUpload = require("express-fileupload");
+//Temp file uploader
+app.use(fileUpload({useTempFiles: true}));
+
+//Required Cloudinary
+const cloudinary = require('cloudinary');
+
+const cookieParser = require('cookie-parser')
 app.use(cookieParser())
 //for message purposes
 // var session = require('express-session');
@@ -20,8 +29,9 @@ app.use(flash())
 
 var bodyParser = require('body-parser')//body parser used to take the data
 app.use(bodyParser.urlencoded({ extended: false }))//used to get data in url and convert to json format
+app.use(express.json())
+
 //router link
-const web = require('./routes/web.js')
 
 //load router
 app.use('/', web);
@@ -29,7 +39,6 @@ app.use('/', web);
 app.set('view engine', 'ejs');
 app.use(express.static('public'))//used for static files like css and img
 
-connectDB();
 
 
 

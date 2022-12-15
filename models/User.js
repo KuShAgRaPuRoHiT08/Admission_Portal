@@ -19,8 +19,17 @@ const UserSchema = new mongoose.Schema({
     role: {
         type: String,
         default:'student'
-    }
-
+    },
+    image: {
+        public_id: {
+          type: String,
+          required: true,
+        },
+        url: {
+          type: String,
+          required: true,
+        },
+    },
 
 }, { timestamps: true })
 // create model

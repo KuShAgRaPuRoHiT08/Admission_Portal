@@ -28,7 +28,7 @@
                         <%=message %>
                     </div>
                     <% }%>
-                        <form action="/registerinsert" method="post">
+                        <form action="/registerinsert" method="post" enctype="multipart/form-data">
                             <div class="input-field">
                                 <input type="text" name="username" placeholder="Enter your name" required>
                                 <i class="uil uil-user"></i>
@@ -38,8 +38,8 @@
                                 <i class="uil uil-envelope icon"></i>
                             </div>
                             <div class="input-field">
-                                <input type="password" name="password" class="password"
-                                    placeholder="Create a password" required>
+                                <input type="password" name="password" class="password" placeholder="Create a password"
+                                    required>
                                 <i class="uil uil-lock icon"></i>
                             </div>
                             <div class="input-field">
@@ -47,6 +47,10 @@
                                     placeholder="Confirm a password" required>
                                 <i class="uil uil-lock icon"></i>
                                 <i class="uil uil-eye-slash showHidePw"></i>
+                            </div><br>
+                            <div class="form-group text-center">
+                                <label class="form-label">Profile Picture</label>
+                                <input type="file" name="profile_image" class="form-control" required />
                             </div>
 
                             <div class="checkbox-text">
@@ -58,6 +62,7 @@
 
                             <div class="input-field button">
                                 <input type="submit" value="Signup">
+                                <!-- <button type="submit" class="btn btn-info">Signup</button> -->
                             </div>
                         </form>
 
@@ -73,7 +78,7 @@
         </div>
     </div>
 
-    <script src="/js/login.js"></script>
+    <!-- <script src="/js/login.js"></script> -->
 </body>
 
 </html>
