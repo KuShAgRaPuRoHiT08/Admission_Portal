@@ -9,11 +9,13 @@ class BlockController {
 
     }
     static forgot_pg = async (req, res) => {
-        res.render('User/forgot_password', { message: req.flash('error') })
+        
+        res.render('User/forgot_password', { message: req.flash('error')})
 
     }
     static reset_password = async (req, res) => {
-        res.render('User/reset_password', { message: req.flash('error') })
+        
+        res.render('User/reset_password', { message: req.flash('error')})
 
     }
 

@@ -40,8 +40,8 @@ body {
 .container-login {
     position: relative;
     height: 450px;
-    max-width: 390px;
-    width: 100%;
+    max-width: auto;
+    width: auto;
     background: #fff;
     border-radius: 10px;
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
@@ -286,5 +286,14 @@ body {
 }
 
 .login {
-    margin-left: 30px;
+    position: relative;
+    height: auto;
+    max-width: auto;
+    width: 25rem;
+    background: #fff;
+    border-radius: 10px;
+    
+    overflow: hidden;
+    margin: 0 20px;
 }
+

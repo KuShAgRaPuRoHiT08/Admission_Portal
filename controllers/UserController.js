@@ -182,12 +182,14 @@ class UserController {
 
         try {
             const { id, token } = req.params
+            
             const { password, confirm_password } = req.body
             // console.log(req.body);
 
             const user = await UserModel.findById(req.params.id)
             // console.log(user);
             if (id !== user.id) {
+                
                 req.flash('error', 'Unauthorized reset password')
                 res.render('User/reset_password')
             }
