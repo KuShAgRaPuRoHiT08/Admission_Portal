@@ -202,7 +202,7 @@ class UserController {
                 // console.log(hashpassword);
                 const result = await UserModel.findByIdAndUpdate(req.params.id, { password: hashpassword })
                 await result.save()
-                req.flash('message', 'Password Changed successfully Do login!')
+                req.flash('error', 'Password Changed successfully Do login!')
                 res.redirect("/")
             }
         } catch (error) {
