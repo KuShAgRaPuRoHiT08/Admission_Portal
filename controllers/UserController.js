@@ -165,7 +165,7 @@ class UserController {
                 // console.log(link);
                 // calling method
                 sendResetPasswordMail(userData.name, userData.email, link)
-                req.flash('message', 'Please check your Email for Reset password link')
+                req.flash('error', 'Please check your Email for Reset password link')
                 res.redirect('/');
             } else {
                 req.flash('error', 'This Email does not exist')
