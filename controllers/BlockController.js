@@ -1,6 +1,6 @@
 const UserModel = require('../models/User')
 const CourseModel = require('../models/Course')
-
+const jwt = require('jsonwebtoken');
 
 class BlockController {
 
@@ -9,13 +9,28 @@ class BlockController {
 
     }
     static forgot_pg = async (req, res) => {
-        
-        res.render('User/forgot_password', { message: req.flash('error')})
+
+        res.render('User/forgot_password', { message: req.flash('error') })
 
     }
     static reset_password = async (req, res) => {
-        
-        res.render('User/reset_password', { message: req.flash('error')})
+        try {
+            const { id, token } = req.params;
+            // console.log(req.params);
+            //Check if this id is exist in database
+            const user = await UserModel.findById(req.params.id);
+
+            if (user) {
+                const secret = process.env.JWT_SECRET_KEY + user.password;
+                const payload = jwt.verify(token, secret)
+                res.render('User/reset_password', { email: user.email })
+            } else {
+                req.flash("error", "This Email does not exist");
+            }
+
+        } catch (error) {
+            console.log(error);
+        }
 
     }
 
