@@ -6,12 +6,12 @@ class AdminController {
     static dashboard = async (req, res) => {
 
         try {
-            const { username,email } = req.user
-            const user = await UserModel.find({ n: username, e: email  })
+            const { username, email, image } = req.user
+            const user = await UserModel.find({ n: username, e: email })
             // console.log(user)
             const result = await CourseModel.find()
             // console.log(result)
-            res.render('admin/dashboard', { data:user ,n: username })
+            res.render('admin/dashboard', { data: user, n: username, image: image })
         } catch (err) {
             console.log(err)
         }
