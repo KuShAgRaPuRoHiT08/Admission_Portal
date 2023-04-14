@@ -5,7 +5,18 @@ const jwt = require('jsonwebtoken');
 class BlockController {
 
     static home = async (req, res) => {
-        res.render('User/login', { message: req.flash('error') })
+        try {
+            const { jwt } = req.cookies;
+            console.log(jwt);
+            if (jwt) {
+                res.redirect('/course')
+            } else {
+                res.render('User/login', { message: req.flash('error'), error: req.flash("error") });
+            }
+        } catch (error) {
+            console.log(error);
+        }
+
 
     }
     static forgot_pg = async (req, res) => {
