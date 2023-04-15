@@ -326,6 +326,7 @@ body {
 
     }
 }
+
 @media only screen and (max-width: 320px) {
 
 
@@ -334,6 +335,7 @@ body {
         width: 12rem;
 
     }
+
     .input-field-login input {
 
         font-size: 12px;
@@ -344,7 +346,15 @@ body {
 
         font-size: 13px;
     }
+   
 }
+
+@media only screen and (max-width: 330px) {
+    .input-field input {
+        font-size: 15px;
+    }
+}
+
 
 @media only screen and (max-width: 280px) {
 
@@ -364,5 +374,9 @@ body {
     .form .text {
 
         font-size: 13px;
+    }
+
+    .input-field input {
+        font-size: 11px;
     }
 }
