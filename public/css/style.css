@@ -175,8 +175,8 @@ p {
   .header .navbar-brand img {
     width: 180px;
     margin-top: -18px;
-    margin-left: -110px;
-    
+    margin-left: -100px;
+
   }
 
   .header .navbar {
@@ -184,17 +184,25 @@ p {
   }
 
   .navbar-toggler {
-    margin-right: -110px;
+    margin-right: -100px;
   }
 
 }
 
 
+@media (max-width: 740px) {
+  .header .navbar-brand img {
+   
+    margin-left: -90px;
+  }
+
+ 
+}
 @media (max-width: 730px) {
   .header .navbar-brand img {
     width: 180px;
     margin-top: -18px;
-    margin-left: -90px;
+    margin-left: -80px;
   }
 
   .navbar-toggler {
@@ -202,9 +210,61 @@ p {
   }
 }
 
+@media only screen and (max-width:700px) {
+  .navbar-toggler {
+    margin-right: -70px;
+  }
+
+  .header .navbar-brand img {
+    margin-left: -70px;
+  }
+}
+
+@media only screen and (max-width:680px) {
+  .header .navbar-brand img {
+    margin-left: -60px;
+  }
+}
+
+@media only screen and (max-width:660px) {
+  .navbar-toggler {
+    margin-right: -50px;
+  }
+  .header .navbar-brand img {
+    margin-left: -50px;
+  }
+}
+@media only screen and (max-width:640px) {
+ 
+  .header .navbar-brand img {
+    margin-left: -40px;
+  }
+}
+
+@media only screen and (max-width:620px) {
+  .navbar-toggler {
+    margin-right: -30px;
+  }
+  .header .navbar-brand img {
+    margin-left: -30px;
+  }
+}
+@media only screen and (max-width:600px) {
+ 
+  .header .navbar-brand img {
+    margin-left: -20px;
+  }
+}
+
+@media only screen and (max-width:580px) {
+  .navbar-toggler {
+    margin-right: -10px;
+  }
+}
+
 @media only screen and (max-width: 576px) {
   .header .navbar-brand img {
-    margin-left: -15px;
+    margin-left: 0px;
   }
 }
 
