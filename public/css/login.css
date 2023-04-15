@@ -302,7 +302,9 @@ body {
 @media only screen and (max-width: 500px) {
 
 
-    .login {}
+    .login {
+        width: 21rem;
+    }
 }
 
 @media only screen and (max-width: 400px) {
