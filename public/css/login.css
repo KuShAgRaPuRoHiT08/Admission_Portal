@@ -302,30 +302,16 @@ body {
 @media only screen and (max-width: 500px) {
 
 
-    .login {
-        position: relative;
-        height: auto;
-        max-width: auto;
-        width: 20rem;
-        background: #fff;
-        border-radius: 10px;
-        overflow: hidden;
-        margin: 0 20px;
-    }
+    .login {}
 }
 
 @media only screen and (max-width: 400px) {
 
 
     .login {
-        position: relative;
-        height: auto;
-        max-width: auto;
+
         width: 17rem;
-        background: #fff;
-        border-radius: 10px;
-        overflow: hidden;
-        margin: 0 20px;
+
     }
 }
 
@@ -333,14 +319,29 @@ body {
 
 
     .login {
-        position: relative;
-        height: auto;
-        max-width: auto;
+
         width: 15rem;
-        background: #fff;
-        border-radius: 10px;
-        overflow: hidden;
-        margin: 0 20px;
+
     }
 }
 
+@media only screen and (max-width: 280px) {
+
+
+    .login {
+
+        width: 13rem;
+
+    }
+
+    .input-field-login input {
+
+        font-size: 13px;
+
+    }
+
+    .form .text {
+
+        font-size: 13px;
+    }
+}
