@@ -67,7 +67,7 @@ class UserController {
                 if (password === confirmpassword) {
                     try {
                         const imagefile = req.files.profile_image
-                        console.log(imagefile);
+                        // console.log(imagefile);
                         const image_upload = await cloudinary.uploader.upload(imagefile.tempFilePath, {
                             folder: 'Profile_pictures',
                             width: 400,

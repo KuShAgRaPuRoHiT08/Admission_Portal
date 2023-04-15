@@ -7,7 +7,7 @@ class BlockController {
     static home = async (req, res) => {
         try {
             const { jwt } = req.cookies;
-            console.log(jwt);
+            // console.log(jwt);
             if (jwt) {
                 res.redirect('/course')
             } else {

@@ -158,7 +158,7 @@ img {
   width: 12px;
   height: 12px;
   border-radius: 0%;
-  background-color: yellow !important;  
+  background-color: yellow !important;
 }
 
 /* course form css starts */
@@ -291,3 +291,66 @@ img {
     height: 190px;
   }
 }
+
+@media only screen and (max-width: 336px) {
+
+
+  .view {
+    border-radius: 0;
+    font-size: 11px;
+    border: 1px solid #fff;
+    font-weight: bold;
+    margin-right: -3px;
+    color: #ffffff !important;
+    padding: 8px 40px;
+    text-transform: capitalize;
+    text-decoration: none;
+  }
+
+}
+
+@media only screen and (max-width: 332px) {
+
+
+  .view {
+    border-radius: 0;
+    font-size: 11px;
+    border: 1px solid #fff;
+    font-weight: bold;
+    margin-right: -13px;
+    color: #ffffff !important;
+    padding: 8px 40px;
+    text-transform: capitalize;
+    text-decoration: none;
+  }
+
+  .edit {
+    border-radius: 0;
+    font-size: 11px;
+    border: 1px solid #fff;
+    font-weight: bold;
+    margin-right: -3px;
+    color: #ffffff !important;
+    padding: 8px 40px;
+    text-transform: capitalize;
+    text-decoration: none;
+  }
+
+}
+
+@media only screen and (max-width: 426px) {
+
+  .form {
+    margin-top: 10px !important;
+  }
+
+}
+@media only screen and (max-width: 768px) {
+
+  .form {
+    margin-top: 10px !important;
+  }
+
+}
+
+
