@@ -326,13 +326,32 @@ body {
 
     }
 }
+@media only screen and (max-width: 320px) {
+
+
+    .login {
+
+        width: 12rem;
+
+    }
+    .input-field-login input {
+
+        font-size: 12px;
+
+    }
+
+    .form .text {
+
+        font-size: 13px;
+    }
+}
 
 @media only screen and (max-width: 280px) {
 
 
     .login {
 
-        width: 13rem;
+        width: 12rem;
 
     }
 
