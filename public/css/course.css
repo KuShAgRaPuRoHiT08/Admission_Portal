@@ -136,6 +136,10 @@ img {
   height: 400px !important;
 }
 
+.carousel-item img{
+  margin-top: 5rem;
+}
+
 .join {
   background-color: #000000;
   /* Green */
