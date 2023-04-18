@@ -83,7 +83,8 @@ p {
 
 /* Navbar  */
 .navbar {
-  background: linear-gradient(135deg, #71b7e6, #9b59b6);
+  /* background: linear-gradient(135deg, #71b7e6, #9b59b6); */
+  background: linear-gradient(135deg, #ffffff, #9b59b6);
 
 }
 
