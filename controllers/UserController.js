@@ -154,7 +154,7 @@ class UserController {
     static forgot_password = async (req, res) => {
         try {
             const email = req.body.email
-            const userData = await UserModel.findOne({ email: req.body.email });
+            const userData = await UserModel.findOne({ email: email });
 
             if (userData) {
                 const secret = process.env.JWT_SECRET_KEY + userData.password
