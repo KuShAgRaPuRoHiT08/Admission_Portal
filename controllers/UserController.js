@@ -11,7 +11,7 @@ const sendResetPasswordMail = async (name, email, link) => {
             service: 'gmail',
             auth: {
                 user: "kushagrapurohit08@gmail.com",
-                pass: 'obaumopyhhldcocw'
+                pass: 'trslfittmgihmisz'
             },
             port: process.env.PORT,
             host: 'smtp.gmail.com'
