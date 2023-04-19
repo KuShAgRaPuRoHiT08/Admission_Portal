@@ -325,6 +325,10 @@ body {
         width: 15rem;
 
     }
+    .form .text {
+
+        font-size: 9px;
+    }
 }
 
 @media only screen and (max-width: 320px) {
