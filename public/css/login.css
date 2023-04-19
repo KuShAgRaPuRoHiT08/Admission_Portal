@@ -51,7 +51,7 @@ body {
 
 .container-signup {
     position: relative;
-    height: 600px;
+    height: 700px;
     max-width: 430px;
     width: 100%;
     background: #fff;
@@ -317,7 +317,7 @@ body {
     }
 }
 
-@media only screen and (max-width: 374px) {
+@media only screen and (max-width: 375px) {
 
 
     .login {
@@ -325,16 +325,17 @@ body {
         width: 15rem;
 
     }
+
     .form .text {
 
-        font-size: 9px;
+        font-size: 12px;
     }
 }
 
 @media only screen and (max-width: 320px) {
 
 
-    .login {
+    /* .login {
 
         width: 12rem;
 
@@ -349,19 +350,19 @@ body {
     .form .text {
 
         font-size: 9px;
+    } */
+
+    .container-login .forms {
+        height: 480px;
     }
-   
-}
 
-@media only screen and (max-width: 330px) {
-    .input-field input {
-        font-size: 15px;
+    .container-login {
+        height: 480px;
     }
-}
 
-
-@media only screen and (max-width: 280px) {
-
+    .container-signup {
+        height: 700px;
+    }
 
     .login {
 
@@ -377,10 +378,15 @@ body {
 
     .form .text {
 
-        font-size: 13px;
+        font-size: 9px;
     }
 
     .input-field input {
         font-size: 11px;
     }
+
 }
+
+
+
+
