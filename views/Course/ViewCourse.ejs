@@ -1,85 +1,151 @@
 <%- include('../header.ejs') %>
 
-<div class="container">
-    <div class="row">
-       <div class="col-md-3"></div>
-      <div class="col-md-6">
-        <br><br><br><br><br>
-        <h3 class="alert-course alert-success text-center">DATA VIEW</h3>
-        
-        <center>
-                
-            </center><table class="table table-striped table-hover table-responsive table-warning ">
-            <tbody><tr>
-                <th>
-                    </th><td></td>  
+<!-- <div class="container"style="padding-top: 140px!important;" >
+    <table class="table table-bordered table-striped">
+        <tbody >
+            <tr>
+                <th></th>
+                <td></td>
                 <td>Username:</td>
-
-                <td><%= data.username %> </td>
-             
-                
+                <td><%= data.name %></td>
             </tr>
             <tr>
-                <th>
-                    </th><td></td>
-                    <td>Email:</td>
-                    <td><%= data.email %></td>
-                    
+                <th></th>
+                <td></td>
+                <td>Email:</td>
+                <td><%= data.email %></td>
             </tr>
             <tr>
-                <th>
-                    </th><td></td>
-                    <td>Mobile No:</td>
-                    <td><%= data.mobile %></td>
-                    
+                <th></th>
+                <td></td>
+                <td>Mobile No:</td>
+                <td><%= data.number %></td>
             </tr>
             <tr>
-                <th>
-                    </th><td></td>
-                    <td>Address:</td>
-                    <td><%= data.address %></td>
-                    
+                <th></th>
+                <td></td>
+                <td>Address:</td>
+                <td><%= data.address %></td>
             </tr>
             <tr>
-                <th>
-                    </th><td></td>
-                    <td>Gender:</td>
-                    <td><%= data.gender %></td>
-                    
+                <th></th>
+                <td></td>
+                <td>Gender:</td>
+                <td><%= data.gender %></td>
             </tr>
             <tr>
-                <th>
-                    </th><td></td>
-                    <td>College:</td>
-                    <td><%= data.college %></td>
-                    
+                <th></th>
+                <td></td>
+                <td>College:</td>
+                <td><%= data.college %></td>
             </tr>
-
             <tr>
-                <th>
-                    </th><td></td>
-                    <td>Course:</td>
-                    <td><%= data.course %></td>
-                    
+                <th></th>
+                <td></td>
+                <td>Course:</td>
+                <td><%= data.course %></td>
             </tr>
-
             <tr>
-                <th>
-                    </th><td></td>
-                    <td>Branch:</td>
-                    <td><%= data.branch %></td>
-                    
+                <th></th>
+                <td></td>
+                <td>Branch:</td>
+                <td><%= data.branch %></td>
             </tr>
-            
-        
-          </tbody></table>
+        </tbody>
        
-        <center>
-          <a href="/DisplayCourse" class="btn-course btn-warning">Back To The Display</a>
-        </center>
-        <br>
-      </div>
-    </div>
-  </div>
+       
+    </table>
+</div> -->
 
-<%- include('../footer.ejs') %>
+    <div class="container">
+        <div class="row">
+
+            <div class="col-md-12">
+                <br>
+                <br>
+                <h3 class="alert-course alert-success text-center">DATA VIEW</h3>
+
+                <table class="table table-striped table-hover table-responsive table-warning ">
+                    <tbody>
+                        <tr>
+                            <td>Username:</td>
+
+                            <td>
+                                <%= data.username %>
+                            </td>
+
+                        </tr>
+
+                        <tr>
+                           
+                           
+                            <td>Email:</td>
+                            <td>
+                                <%= data.email %>
+                            </td>
+
+                        </tr>
+                        <tr>
+                           
+                            <td>Mobile No:</td>
+                            <td>
+                                <%= data.mobile %>
+                            </td>
+
+                        </tr>
+                        <tr>
+                          
+                            <td>Address:</td>
+                            <td>
+                                <%= data.address %>
+                            </td>
+
+                        </tr>
+                        <tr>
+                          
+                            <td>Gender:</td>
+                            <td>
+                                <%= data.gender %>
+                            </td>
+
+                        </tr>
+                        <tr>
+                          
+                            <td>College:</td>
+                            <td>
+                                <%= data.college %>
+                            </td>
+
+                        </tr>
+
+                        <tr>
+                          
+                            <td>Course:</td>
+                            <td>
+                                <%= data.course %>
+                            </td>
+
+                        </tr>
+
+                        <tr>
+                          
+                            <td>Branch:</td>
+                            <td>
+                                <%= data.branch %>
+                            </td>
+
+                        </tr>
+
+
+                    </tbody>
+                </table>
+
+                <center>
+                    <a href="/DisplayCourse" class="btn btn-course btn-warning">Back To The Display</a>
+                </center>
+                <br>
+            </div>
+        </div>
+    </div>
+
+    <%- include('../footer.ejs') %>

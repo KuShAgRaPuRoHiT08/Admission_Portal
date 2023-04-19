@@ -1,6 +1,6 @@
 <%- include('../header.ejs') %>
 
-<br><br><br><br>
+<br><br>
   <div class="container">
     <div class="row">
       <div class="col-md-12">
@@ -31,10 +31,10 @@
                 <td><%= item.course %>
                 </td>
                 <td>
-                  <a class="btn-course btn-sm action-btn view btn-info" href="/ViewCourse/<%= item._id %>">view
-                  </a>&nbsp;
-                  <a class="btn-course btn-sm action-btn edit btn-danger" href="/EditCourse/<%= item._id %>">Edit
-                  </a>
+                  <a href="/ViewCourse/<%= item._id %>" class="btn btn-danger btn-sm action-btn"><i class="fa-solid fa-eye"></i></a>&nbsp;&nbsp;
+                  <a href="/EditCourse/<%= item._id %>" class="btn btn-info btn-sm action-btn" ><i class="fa-regular fa-pen-to-square"></i></a>
+
+                  
                 </td>
               </tr>
               <% })%>
@@ -42,7 +42,7 @@
         </table>
         
         <center>
-          <a href="/course" class="btn-course btn-warning">Back To The Dashboard</a>
+          <a href="/course" class="btn btn-course btn-warning">Back To The Dashboard</a>
         </center>
         <br>
       </div>

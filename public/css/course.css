@@ -234,7 +234,7 @@ img {
   .cards_wrap .g-card {
     height: 200px;
   }
-
+  
   .cards_wrap .g-card2 {
     height: 200px;
   }
@@ -246,16 +246,30 @@ img {
     width: 70%;
     margin-left: 115px;
   }
-
+  
   .cards_wrap .g-card {
     height: 190px;
   }
-
+  
   .cards_wrap .g-card2 {
     height: 170px;
   }
+  
+  
+}
 
-
+@media only screen and (max-width: 768px) {
+  
+  .form {
+    margin-top: 280px !important;
+  }
+  .b1 {
+    margin-top: 0px;
+    font-size: 36px;
+    line-height: 1.5;
+    font-weight: 600;
+}
+  
 }
 
 @media (max-width: 704px) {
@@ -308,7 +322,23 @@ img {
     text-transform: capitalize;
     text-decoration: none;
   }
+  .b1 {
+    margin-top: 0px !important;
+    font-size: 36px;
+    line-height: 1.5;
+    font-weight: 600;
+  }
 
+}
+
+
+@media only screen and (max-width: 426px) {
+  
+  .form {
+    margin-top: 50px !important;
+  }
+
+  
 }
 
 @media only screen and (max-width: 332px) {
@@ -337,22 +367,20 @@ img {
     text-transform: capitalize;
     text-decoration: none;
   }
-
-}
-
-@media only screen and (max-width: 426px) {
-
-  .form {
-    margin-top: 10px !important;
+  .b1 {
+    margin-top: 0px !important;
+    font-size: 36px;
+    line-height: 1.5;
+    font-weight: 600;
   }
 
 }
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 375px) {
 
-  .form {
-    margin-top: 10px !important;
-  }
-
+.b1 {
+  margin-top: 0px !important;
+  font-size: 36px;
+  line-height: 1.5;
+  font-weight: 600;
 }
-
-
+}
