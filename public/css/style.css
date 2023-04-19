@@ -158,14 +158,14 @@ p {
   }
 
   .profileImg {
-
     display: flex;
     justify-content: center;
+    margin-top: 10px;
   }
 
   .profileImg img {
-    width: 80px;
-    height: 70px;
+    width: 100px;
+    height: 90px;
     border-radius: 50%;
   }
 
