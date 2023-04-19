@@ -136,6 +136,10 @@ p {
   justify-content: center;
 }
 
+.tb{
+  display: inline-table;
+}
+
 @media only screen and (max-width: 1200px) {
 
   .btn-header {

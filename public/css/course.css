@@ -181,7 +181,7 @@ img {
 .form {
   margin-top: 290px !important;
   background-color: #fafaf8;
-  margin-left: 20px;
+  /* margin-left: 20px; */
   margin-bottom: 50px;
   height: 800px;
 }

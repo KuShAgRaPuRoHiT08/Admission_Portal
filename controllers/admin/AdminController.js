@@ -24,10 +24,10 @@ class AdminController {
     static DisplayData = async (req, res) => {
 
         try {
-            const { username } = req.user
+            const { username, image } = req.user
             const result = await CourseModel.find()
             // console.log(result)
-            res.render('admin/DisplayData', { data: result, n: username })
+            res.render('admin/DisplayData', { data: result, n: username, image: image })
         } catch (err) {
             console.log(err)
         }
@@ -35,10 +35,10 @@ class AdminController {
     static ViewData = async (req, res) => {
 
         try {
-            const { username } = req.user
+            const { username, image } = req.user
             const result = await CourseModel.findById(req.params.id)
             // console.log(result)
-            res.render('admin/ViewData', { data: result, n: username })
+            res.render('admin/ViewData', { data: result, n: username, image: image })
         } catch (err) {
             console.log(err)
         }
